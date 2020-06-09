@@ -1,0 +1,130 @@
+<%- include("header") -%>
+
+
+<div class="cycle">
+  <img class="cycle-img" src=<%= cycle[0].imageUrl %> alt="">
+  <div class="cycle-des">
+    <h3 id="cycle-name"><%= cycle[0].name %></h3>
+  <%  if(cycle[0].price!=0){ %>
+      <p id="cycle-price">Price: <%= cycle[0].price %></p>
+  <%  } %>
+  <%  if(cycle[0].color!='-'){ %>
+    <p><strong>Color:</strong> <%= cycle[0].color %></p>
+  <% } %>
+  </div>
+</div>
+  <div class="cycle-spec" style="text-align:center;">
+    <hr id="cycle-hr">
+    <p style="color: #52616b; font-size: 3rem;">Specifications</p>
+    <div class="row">
+
+    <%  if(cycle[0].category!='Fitness'){ %>
+      <!-- age -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Age</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].age %></p>
+      </div>
+        <!-- frame -->
+              <div class="specs-card">
+                <h6 style="margin-top:10px;">Frame</h6>
+                <hr style="width:70%;">
+                <p><%= cycle[0].frame %></p>
+              </div>
+
+              <!-- pedals -->
+              <div class="specs-card">
+                <h6 style="margin-top:10px;">Pedals</h6>
+                <hr style="width:70%;">
+                <p><%= cycle[0].pedals %></p>
+              </div>
+
+            <!-- rim -->
+            <div class="specs-card">
+              <h6 style="margin-top:10px;">Rim</h6>
+              <hr style="width:70%;">
+              <p><%= cycle[0].rim %></p>
+            </div>
+
+
+
+      <!-- brakes -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Brakes</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].brakes %></p>
+      </div>
+
+      <!-- grip -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Grip</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].grip %></p>
+      </div>
+
+      <!-- mudguard -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Mud Guards</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].mudGuards %></p>
+      </div>
+
+      <!-- saddle -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Saddle</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].saddle %></p>
+      </div>
+
+      <!-- tyres -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Tyres</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].tyres %></p>
+      </div>
+    <%  } else{ %>
+
+      <!-- belt -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Belt</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].belt %></p>
+      </div>
+
+      <!-- crank -->
+      <div class="specs-card">
+        <h6 style="margin-top:10px;">Crank</h6>
+        <hr style="width:70%;">
+        <p><%= cycle[0].crank %></p>
+      </div>
+
+          <!-- monitor -->
+          <div class="specs-card">
+            <h6 style="margin-top:10px;">Monitor</h6>
+            <hr style="width:70%;">
+            <p><%= cycle[0].monitor %></p>
+          </div>
+
+          <!-- resistance -->
+          <div class="specs-card">
+            <h6 style="margin-top:10px;">Resistance</h6>
+            <hr style="width:70%;">
+            <p><%= cycle[0].resistance %></p>
+          </div>
+
+          <!-- userWeight -->
+          <div class="specs-card">
+            <h6 style="margin-top:10px;">User Weight</h6>
+            <hr style="width:70%;">
+            <p><%= cycle[0].userWeight %></p>
+          </div>
+      <%  } %>
+
+
+    </div>
+
+  </div>
+
+
+
+<%- include("footer") -%>

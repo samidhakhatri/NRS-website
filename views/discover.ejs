@@ -1,0 +1,148 @@
+<%- include("header") -%>
+
+
+<!-- Carousel -->
+<div id="image-carousel" class="carousel slide" data-ride="false" data-pause="hover" data-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-color:yellow;">
+      <img src="/images/img3.jpg" alt="cycle1" class="image">
+    </div>
+    <div class="carousel-item" style="background-color:blue;">
+      <img src="/images/img2.jpg" alt="cycle2" class="image">
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" role="button" data-slide="prev" href="#image-carousel">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<h1 id="heading">Browse By:</h1>
+
+<div class="brand">
+<h4 class="sub-heading">Brands</h4>
+
+<!-- Brand Carousel -->
+  <div id="brand-carousel" class="carousel slide" data-ride="false">
+    <div class="carousel-inner" style="text-align:center;">
+      <div class="carousel-item active">
+        <%  for(var i=1; i<=11;i++){  %>
+        <%  var s="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/logos/Image" +i+".png" %>
+          <%    if(i==5){   %>
+              </div>
+              <div class="carousel-item">
+          <%    }   %>
+          <%    if(i==9){   %>
+              </div>
+              <div class="carousel-item">
+          <%    }   %>
+                  <div class="co" style="display:inline-block;">
+                    <img class="box" src=<%= s %> alt="" >
+                    <p hidden><%= i %></p>
+                  </div>
+
+
+        <%  }  %>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" role="button" data-slide="prev" href="#brand-carousel">
+      <span class="carousel-control-prev-icon" style="background-color:black;"></span>
+    </a>
+    <a class="carousel-control-next" href="#brand-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" style="background-color: black;"></span>
+    </a>
+  </div>
+  </div>
+
+
+<div class="featured">
+<h4 class="sub-heading">Featured</h4>
+<div class="row">
+
+<div class="card-deck" style="margin-left:20px; margin-right:20px; text-align:center;">
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image01.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>Mountain</h5>
+  </div>
+</div>
+
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image02.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>E-Bikes</h5>
+  </div>
+</div>
+
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image3.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>Geared</h5>
+  </div>
+</div>
+
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image07.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>ATB</h5>
+  </div>
+</div>
+
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image08.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>City</h5>
+  </div>
+</div>
+
+<div class="card featured-card">
+  <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/featured/Image06.jpg" class="card-img-top" alt="">
+  <div class="card-body" style="text-align:center;">
+    <h5>Hybrid</h5>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="category">
+  <h4 class="sub-heading" style="margin-top:0;">Category</h4>
+
+  <div class="" style="margin-left:20px; margin-right:20px; text-align:center;">
+    <div class="category-card">
+      <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/categories/Image01.jpg" class="category-img" alt="">
+      <h5>Girls</h5>
+    </div>
+
+    <div class="category-card">
+      <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/categories/Image02.jpg" class="category-img" alt="">
+      <h5>Kids</h5>
+    </div>
+
+    <div class="category-card">
+      <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/categories/Image03.jpg" class="category-img" alt="">
+      <h5>Boys</h5>
+    </div>
+
+    <div class="category-card">
+      <img class="accessories"src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/categories/Image5.jpg" class="category-img" alt="">
+      <h5>Accessories</h5>
+    </div>
+
+    <div class="category-card">
+      <img src="https://backendlessappcontent.com/4B78AA09-FA2F-1E2B-FFE2-7A2CD33F5C00/9C9DD91A-053D-4923-A7A1-90E09E3784B9/files/categories/Image06.jpg" class="category-img" alt="">
+      <h5>Fitness</h5>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="index.js"  charset="utf-8"></script>
+
+<%- include("footer") -%>

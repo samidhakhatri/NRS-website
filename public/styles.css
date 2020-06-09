@@ -1,0 +1,309 @@
+/**************************************CSS Property for elements***********************************************/
+
+
+
+/**************************************CSS Property for IDs****************************************************/
+#cycle-name{
+  display: inline-block;
+    margin-top: 100px;
+}
+
+#cycle-price{
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#heading{
+  color: #1e2022;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#cycle-hr{
+  width: 20%;
+  border-width: 20px;
+  border-top: dotted;
+  color: lightgrey;
+}
+
+
+/**************************************CSS Property for Classes************************************************/
+
+.about{
+  margin-left: 5px;
+  margin-top: 75px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about-img{
+  padding-left:0px;
+  height:520px;
+}
+
+.about p{
+  padding-top:120px;
+  padding-right: 20px;
+}
+
+.accessories{
+  border-radius: 10px;
+  width:190px;
+  height:150px;
+}
+
+.bar{
+  width: 100%;
+}
+
+.box{
+  border-radius: 10px;
+   /* box-shadow: 5px 10px 8px #52616b; */
+  height: 140px;
+  margin-right: 40px;
+  width: 200px;
+}
+.brand{
+  margin-bottom: 20px;
+}
+.category{
+  background-color:#f0f5f9;
+  padding-bottom: 20px;
+}
+
+
+.category-card{
+  display: inline-block;
+  width:200px;
+  margin-right: 20px;
+  text-align:center;
+}
+
+.category-img{
+  width: 200px;
+  border-radius: 10px;
+}
+
+.cycle{
+  height: 400px;
+  margin-top:100px;
+  text-align:center;
+}
+
+.cycle-des{
+  display:inline-block;
+  width:200px;">
+}
+
+.cycle-img{
+  float: left;
+  height: 350px;
+  margin-left: 150px;
+  width: 550px;
+}
+
+.cycle-spec .row{
+  margin:20px 40px 20px 120px;
+}
+
+.featured{
+  background-color: #f0f5f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featured-card{
+  width:15rem;
+ margin-left:5px;
+}
+
+.footer{
+  background-color: #52616b;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.list-card{
+  box-shadow: 4px 4px lightgrey;
+  display: inline-block;
+  height:250px;
+  border: 0.5px solid lightgrey;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.list-img{
+  width: 90%;
+  height: 150px;
+  margin-top: 15px;
+}
+
+
+.locate{
+  margin-left: 5px;
+  margin-top: 80px;
+  padding-left: 0px;
+}
+
+.locate .col-lg-7{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.locate p{
+  padding-top:150px;
+}
+.navbar{
+  padding-left: 50px;
+  padding-right: 70px;
+}
+
+.nav-item{
+}
+
+.specs-card{
+  border: 1px solid lightgrey;
+  box-shadow: 4px 4px lightgrey;
+  border-radius: 10px;
+  color: #52616b;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 150px;
+  margin: 10px 20px 20px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  width: 200px;
+}
+.sub-heading{
+  color: #1e2022;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/*************************************** MEDIA QUERIES **************************************************************/
+@media(min-width:900px){
+  .image{
+  width:100%;
+  height: 600px;
+}
+
+  }
+
+  @media (max-width:900px){
+    .about-img{
+      height: 400px;
+      padding-right: 0px;
+      width: 100%;
+    }
+
+    .about p{
+      padding-top: 20px;
+      padding-right: 5px;
+    }
+    .accessories{
+      height: 220px;
+      width: 100%;
+    }
+
+    .category-card{
+      width: 100%;
+    }
+
+    .category-card h5{
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .category-img{
+      width: 100%;
+    }
+
+    .cycle{
+      margin-bottom: 30px;
+      margin-top:80px;
+      text-align:center;
+    }
+
+    .cycle-des{
+      width: 100%;
+    }
+
+    .cycle-img{
+      height: 60%;
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    #cycle-hr{
+      margin-top: 50px;
+      width: 60%;
+    }
+
+    #cycle-name{
+      margin-top: 20px;
+    }
+
+    #cycle-price{
+      margin-top: 0;
+    }
+
+    .cycle-spec .row{
+      padding-left: 10px;
+      margin: 20px auto 20px auto;
+      padding-right: 10px;
+    }
+
+    .image{
+      width: 100%;
+      height: 300px;
+    }
+    h4{
+      text-align: center;
+    }
+    /* .featured{
+      display: inline-block;
+      margin: auto;
+      text-align: center;
+    } */
+    .featured .card{
+      display: inline-block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .featured-card{
+      margin-bottom: 20px;
+      width: 20rem;
+    }
+
+    .locate p{
+      padding-top:20px;
+      padding-right: 10px;
+    }
+
+    .list-card{
+      margin-left: 0;
+      margin-top: 20px;
+      width: 70%;
+    }
+
+    .navbar{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .specs-card{
+      margin: 10px auto;
+      height: 150px;
+      width: 170px;
+    }
+
+    .sub-heading{
+      margin-left: 0px;
+    }
+  }

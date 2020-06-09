@@ -1,0 +1,31 @@
+<%- include("header")  -%>
+
+
+<div class="" style="margin-top: 100px; text-align:center;">
+
+    <% for( var i=0; i<cycles.length; i++){ %>
+      <div class="list-card">
+        <img class="list-img" src=<%= cycles[i].imageUrl %> alt="">
+
+    <%  var s=encodeURIComponent(cycles[i].name)  %>
+  <%  if(cycles[i].category!='accessories'){ %>
+      <h6 style="margin-top:5px;"><%= cycles[i].name %></h6>
+      <button class="btn btn-primary"  type="button" name="button" value=<%= s %> >View Details</button>
+  <%  }else{ %>
+    <h6 style="margin-top:20px;"><%= cycles[i].name %></h6>
+  <% }  %>
+      </div>
+    <% } %>
+
+</div>
+
+
+
+
+<script>
+$(".list-card button").click(function(){
+  window.location.href="/cycles/"+ $(this).val();
+})
+</script>
+
+<%- include("footer") -%>
